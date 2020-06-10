@@ -137,6 +137,93 @@ for y in range (imgy):
 
 ### 
 
-![Trebol morado]()
+![Flor amarilla](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/3%20fractal%20de%20newton.png)
+
+La función con la cual se generó este fractal fue $z^15-z^13-z^11-z^9-z^7-z^5-z^3-1$
+
+```
+import matplotlib.pyplot as plt
+import numpy as np 
+from PIL import Image
+
+imgx=800
+imgy=800
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+image
+
+xa=-1
+xb=1
+ya=-1
+yb=1
+maxit=202
+h=1e-6
+eps=1e-3
+
+def f(z):
+    return z**15-z**13-z**11-z**9-z**7-z**5-z**3-1
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            dz=(f(z+complex(h,h))-f(z))/complex(h,h)
+            z0=z-f(z)/dz
+            if abs (z0-z)<eps:
+                break
+            z=z0
+            r=i*80
+            g=i*50
+            b=i*3
+            image.putpixel((x,y),(r,g,b)
+```
+### 
+
+![Flor morada](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/4%20Fractal%20de%20newton.png)
+
+La función con la cual se generó este fractal fue $z^7-z^6+z^5-z^4+z^3-15$
+
+```
+import matplotlib.pyplot as plt
+import numpy as np 
+from PIL import Image
+
+imgx=800
+imgy=800
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+image
+
+xa=-1
+xb=1
+ya=-1
+yb=1
+maxit=202
+h=1e-6
+eps=1e-3
+
+def f(z):
+    return z**7-z**6+z**5-z**4+z**3-15
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            dz=(f(z+complex(h,h))-f(z))/complex(h,h)
+            z0=z-f(z)/dz
+            if abs (z0-z)<eps:
+                break
+            z=z0
+            r=i*80
+            g=i*10
+            b=i*20
+            image.putpixel((x,y),(r,g,b))
+```
+
+
+
+
 
 
