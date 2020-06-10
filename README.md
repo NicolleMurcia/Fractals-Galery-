@@ -87,9 +87,53 @@ for y in range (imgy):
  
  image
 ```
+### Trebol Morado 
 
 ![Trebol morado](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Newton.png)
 
+
+La función con la cual se generó este fracta fue $z^7-z^5-z^3-1$
+
+Y el código que se implementó para generar el fractal fue: 
+
+```
+import matplotlib.pyplot as plt
+import numpy as np 
+from PIL import Image
+
+imgx=800
+imgy=800
+image=Image.new("RGB",(imgx,imgy))
+image.putpixel((100,100),(255,255,255))
+image
+
+xa=-1
+xb=1
+ya=-1
+yb=1
+maxit=202
+h=1e-6
+eps=1e-3
+
+
+def f(z):
+    return z**7-z**5-z**3-1
+for y in range (imgy):
+    zy=y*(yb-ya)/(imgy-1)+ya
+    for x in range (imgx):
+        zx=x*(xb-xa)/(imgx-1)+xa
+        z=complex(zx,zy)
+        for i in range (maxit):
+            dz=(f(z+complex(h,h))-f(z))/complex(h,h)
+            z0=z-f(z)/dz
+            if abs (z0-z)<eps:
+                break
+            z=z0
+            r=i*50
+            g=i*8
+            b=i*70
+            image.putpixel((x,y),(r,g,b))
+```
 
 
 
