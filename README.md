@@ -1,3 +1,3 @@
-# Fractals-Galery-
+# Galería de Fractales
 You will find beautiful fractals
-Nicolle las más germosa
+
