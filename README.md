@@ -42,6 +42,10 @@ varias de las siguientes propiedades:
 
 Función con la que se generó $z**5-1$
 
+
+![flor2](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Newton.png)
+
+
 ```
 
 ```
