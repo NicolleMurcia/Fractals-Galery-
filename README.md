@@ -17,3 +17,4 @@ varias de las siguientes propiedades:
 
 ## Fractales de Newton 
 
+https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/1%20fractal%20de%20newton.png
