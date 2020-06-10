@@ -44,9 +44,9 @@ varias de las siguientes propiedades:
 
 ![Flor de 5 pétalos](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/1%20fractal%20newton.png)
 
-Función con la que se generó $z^5-1$
+Función con la que se generó el fractal fue $z^5-1$
 
-Para generar este fractal se implemento el siguiente código: 
+Para este fractal se implemento el siguiente código: 
 
 ```
 import matplotlib.pyplot as plt
@@ -92,7 +92,7 @@ for y in range (imgy):
 ![Trebol morado](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Newton.png)
 
 
-La función con la cual se generó este fracta fue $z^7-z^5-z^3-1$
+La función con la cual se generó este fractal fue $z^7-z^5-z^3-1$
 
 Y el código que se implementó para generar el fractal fue: 
 
@@ -135,5 +135,8 @@ for y in range (imgy):
             image.putpixel((x,y),(r,g,b))
 ```
 
+### 
+
+![Trebol morado]()
 
 
