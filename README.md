@@ -42,3 +42,7 @@ varias de las siguientes propiedades:
 
 Función con la que se generó $z**5-1$
 
+```
+
+```
+
