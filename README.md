@@ -17,3 +17,4 @@ varias de las siguientes propiedades:
 
 ## Fractales de Newton 
 
+![Flor de 5 pétalos]()
