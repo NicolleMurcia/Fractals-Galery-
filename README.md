@@ -27,9 +27,13 @@ También llamada "geometría de la naturaleza"
 
 Un fractal es un conjunto que tiene una o
 varias de las siguientes propiedades:
+
 • Tiene detalles a todas las escalas.
+
 • Es autosemejante.
+
 • Tiene una definición algorítmica sencilla.
+
 • Tiene dimensión topológica menor que su dimensión de Hausdorff.
 
 # FRACTALES 
@@ -82,12 +86,8 @@ for y in range (imgy):
             image.putpixel((x,y),(r,g,b))
  
  image
-
+```
 
 ![Trebol morado](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Newton.png)
 
-
-```
-
-```
 
