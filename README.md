@@ -44,7 +44,7 @@ varias de las siguientes propiedades:
 
 ![Flor de 5 pétalos](https://github.com/NicolleMurcia/Fractals-Galery-/blob/master/1%20fractal%20de%20newton.png)
 
-Función con la que se generó $z**5-1$
+Función con la que se generó $z^5-1$
 
 Para generar este fractal se implemento el siguiente código: 
 
@@ -89,5 +89,7 @@ for y in range (imgy):
 ```
 
 ![Trebol morado](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Newton.png)
+
+
 
 
