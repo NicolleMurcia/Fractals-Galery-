@@ -42,7 +42,7 @@ varias de las siguientes propiedades:
 
 ###  Flor de cinco pétalos
 
-![Flor de 5 pétalos](https://github.com/NicolleMurcia/Fractals-Galery-/blob/master/1%20fractal%20de%20newton.png)
+![Flor de 5 pétalos](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/1%20fractal%20newton.png)
 
 Función con la que se generó $z^5-1$
 
