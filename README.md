@@ -376,7 +376,7 @@ for y in range (imgy):
  ```
 ## Funciones Iteradas 
 
-### Fractal número 1 
+### Triángulo de Sierpinski
 
 ![Triángulo](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/triangulo%20iterado.png)
 
@@ -408,7 +408,7 @@ plt.grid()
 ax.axis("equal")
 ```
 
-### Fractal número 2
+### Helecho
 
 ![Helecho](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/helecho%20rosado%20iterado.png)
 
