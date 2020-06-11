@@ -522,7 +522,7 @@ def copoVonKoch(lado, n):
 
 ## Fractal 3D
 
-![Copo de Koch](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/Copo%20de%20Koch.png)
+![Copo de Koch]()
 
 
 
