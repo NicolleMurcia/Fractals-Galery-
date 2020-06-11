@@ -19,6 +19,16 @@ MathJax.Hub.Queue(function() {
 
 # Galería de Fractales
 
+### Geometría Fractal 
+
+La geometría fractal busca y estudia la regularidad en las relaciones entre un objeto y sus partes a diferentes escalas.
+
+A fnales del siglo XIX surgieron conjuntos muy irregulares que poseían propiedades geométricas y analíticas sorprendentes. El primero de estos conjuntos fue el conjunto de Cantor (1890), y luego aparecieron otros tales como el triángulo de Sierpinski, curva de Koch, esponja de Menger, la curva de Peano, etc. A medida que se fueron creando las herramientas matemáticas necesarias para estudiarlos y comprenderlos, la teoría de Hausdorff y la teoría de Besicovitch, fue aumentando el interés por ellos. El origen de la geometría
+fractal o teoría geométrica de la medida está en el estudio de estos conjuntos irregulares y sus propiedades.
+
+En 1977, B. Mandelbrot, en su obra “The fractal Geometry of Nature”, introdujo el término fractal designado a aquellos conjuntos de estructuras irregulares y complejas que no tenían ningún nombre concreto y desde entonces se conoce esta rama de las matemáticas como geometría fractal.
+
+
 ### ¿Qué es un Fractal?
 
 Un fractal es un conjunto que tiene una o
@@ -31,6 +41,8 @@ varias de las siguientes propiedades:
 • Tiene una definición algorítmica sencilla.
 
 • Tiene dimensión topológica menor que su dimensión de Hausdorff.
+
+En otras palabras, un fractal es un conjunto de estructuras irregulares y complejas descritas a través de algoritmos matemáticos y computacionales; los cuales reemplazan a los puntos, rectas, circunferencias y dem´as figuras provenientes de la matem´atica tradicional . Estos objetos tienen como caracter´ısticas fundamentales las propiedades de autosimilitud y la de convivir con extraños paisajes formados por dimensiones fraccionarias.
 
 # FRACTALES 
 
