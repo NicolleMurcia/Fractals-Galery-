@@ -269,7 +269,7 @@ for y in range (imgy):
 
 ![Fractal 2 Julia](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Julia.png)
 
-La función con la cual se generó este fractal fue $z^4+0.3+0.5i$
+La función con la cual se generó este fractal fue $z^4+(0.3+0.5i)$
 
 El código que se implementó para el fractal fue: 
 
@@ -300,17 +300,16 @@ for y in range (imgy):
             g=i*8
             b=i*8
             image.putpixel((x,y),(r,g,b))
-            
 ```
 
 ### Fractal número 3
 
-![Fractal 3 Julia](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Julia.png)
+![Fractal 3 Julia](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/3%20fractal%20de%20Julia.png)
 
 
-La función con la cual se genero este fractal fue, $z^5+i$
+La función con la cual se generó este fractal fue, $z^5+i$
 
-El código que se implemento para el fractal fue: 
+El código que se implementó para el fractal fue: 
 
 ```
 import matplotlib.pyplot as plt
@@ -345,7 +344,7 @@ for y in range (imgy):
 
 ![Fractal 4 Julia](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/4%20fractal%20de%20Julia.png)
 
-La función con la cual se generó este fractal fue, $z^9-z^4+0.5i)
+La función con la cual se generó este fractal fue, $z^9-z^4+0.5i$
 
 El código que se implementó para este fractal fue: 
 
