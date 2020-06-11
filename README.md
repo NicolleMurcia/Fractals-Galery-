@@ -374,6 +374,10 @@ for y in range (imgy):
             image.putpixel((x,y),(r,g,b))
             
  ```
+## Funciones Iteradas 
+
+### Fractal número 1 
+
 
 
 
