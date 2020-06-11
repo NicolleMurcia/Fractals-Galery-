@@ -135,7 +135,7 @@ for y in range (imgy):
 
 ![Flor amarilla](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/3%20fractal%20de%20newton.png)
 
-La función con la cual se generó este fractal fue, $z^15-z^13-z^11-z^9-z^7-z^5-z^3-1$
+La función con la cual se generó este fractal fue, $z^{15}-z^{13}-z^{11}-z^9-z^7-z^5-z^3-1$
 
 Y el código que se implementó fue el siguiente: 
 
@@ -228,7 +228,7 @@ for y in range (imgy):
 
 ![Fractal 1 Julia](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/1%20fractal%20de%20Julia.png)
 
-La función con la cual se generó este fractal fue, $z^10+i$
+La función con la cual se generó este fractal fue, $z^{10}+i$
 
 Y el código que se implementó para este fractal fue: 
 
