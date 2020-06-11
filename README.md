@@ -19,10 +19,6 @@ MathJax.Hub.Queue(function() {
 
 # Galería de Fractales
 
-## Geometría fractal
-
-También llamada "geometría de la naturaleza" 
-
 ### ¿Qué es un Fractal?
 
 Un fractal es un conjunto que tiene una o
@@ -44,9 +40,9 @@ varias de las siguientes propiedades:
 
 ![Flor de 5 pétalos](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/1%20fractal%20newton.png)
 
-Función con la que se generó el fractal fue $z^5-1$
+Función con la que se generó el fractal fue, $z^5-1$
 
-Para este fractal se implemento el siguiente código: 
+Para este fractal se implementó el siguiente código: 
 
 ```
 import matplotlib.pyplot as plt
@@ -92,7 +88,7 @@ for y in range (imgy):
 ![Trebol morado](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Newton.png)
 
 
-La función con la cual se generó este fractal fue $z^7-z^5-z^3-1$
+La función con la cual se generó este fractal fue, $z^7-z^5-z^3-1$
 
 Y el código que se implementó para generar el fractal fue: 
 
@@ -139,9 +135,9 @@ for y in range (imgy):
 
 ![Flor amarilla](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/3%20fractal%20de%20newton.png)
 
-La función con la cual se generó este fractal fue $z^15-z^13-z^11-z^9-z^7-z^5-z^3-1$
+La función con la cual se generó este fractal fue, $z^15-z^13-z^11-z^9-z^7-z^5-z^3-1$
 
-Y el código que se implemento fue el siguiente: 
+Y el código que se implementó fue el siguiente: 
 
 ```
 import matplotlib.pyplot as plt
@@ -184,7 +180,7 @@ for y in range (imgy):
 
 ![Flor morada](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/4%20Fractal%20de%20newton.png)
 
-La función con la cual se generó este fractal fue $z^7-z^6+z^5-z^4+z^3-15$
+La función con la cual se generó este fractal fue, $z^7-z^6+z^5-z^4+z^3-15$
 
 Y el código que se implementó fue el siguiente: 
 ```
@@ -232,9 +228,9 @@ for y in range (imgy):
 
 ![Fractal 1 Julia](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/1%20fractal%20de%20Julia.png)
 
-La función con la cual se generó este fractal fue $z^10+i$
+La función con la cual se generó este fractal fue, $z^10+i$
 
-Y el código que se implementó fue: 
+Y el código que se implementó para este fractal fue: 
 
 ```
 import matplotlib.pyplot as plt
@@ -269,7 +265,7 @@ for y in range (imgy):
 
 ![Fractal 2 Julia](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/2%20fractal%20de%20Julia.png)
 
-La función con la cual se generó este fractal fue $z^4+(0.3+0.5i)$
+La función con la cual se generó este fractal fue, $z^4+(0.3+0.5i)$
 
 El código que se implementó para el fractal fue: 
 
