@@ -378,10 +378,151 @@ for y in range (imgy):
 
 ### Fractal número 1 
 
+![Triángulo](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/triangulo%20iterado.png)
+
+El código que se implementó para generar este fractal fue: 
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+def transafin(M,t,x):
+    y=M@x+t
+    return y
+
+transafin([[0.5,0],[0,0.5]],[0,0],Tri[1])
 
 
+fig=plt.figure()
+ax=plt.gca()
+Tri=np.array([[0,0]])
+for i in range(8):
+    tritrans=np.array([transafin([[0.5,0],[0,0.5]],[0,0],i) for i in Tri])
+    tritrans2=np.array([transafin([[0.5,0],[0,0.5]],[0,0.5],i) for i in Tri])
+    tritrans3=np.array([transafin([[0.5,0],[0,0.5]],[0.5,0],i) for i in Tri])
+    Tri=np.concatenate((tritrans,tritrans2,tritrans3))
+plt.scatter(Tri.transpose()[0],Tri.transpose()[1],color='Orange',s=0.2)
+ax.set_xticks(np.arange(-0.2,1.4,0.2))
+ax.set_yticks(np.arange(-0.2,1.4,0.2))
+plt.grid()
+ax.axis("equal")
+```
+
+### Fractal número 2
+
+![Helecho](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/triangulo%20iterado.png)
+
+El código que se implementó para generar este fractal fue: 
+
+```
+import matplotlib.pyplot as plt 
+from random import randint 
+  
+
+x = [] 
+y = [] 
+  
+    
+x.append(0) 
+y.append(0) 
+  
+current = 0
+  
+for i in range(1, 50000): 
+  
+
+    z = randint(1, 100) 
+  
+    
+    if z == 1: 
+        x.append(0) 
+        y.append(0.16*(y[current])) 
+      
+     
+    if z>= 2 and z<= 86: 
+        x.append(0.90*(x[current]) + 0.04*(y[current])) 
+        y.append(-0.04*(x[current]) + 0.80*(y[current])+1.6) 
+      
+     
+    if z>= 87 and z<= 93: 
+        x.append(0.2*(x[current]) - 0.26*(y[current])) 
+        y.append(0.23*(x[current]) + 0.22*(y[current])+1.6) 
+      
+    
+    if z>= 94 and z<= 100: 
+        x.append(-0.15*(x[current]) + 0.28*(y[current])) 
+        y.append(0.20*(x[current]) + 0.10*(y[current])+0.44) 
+          
+    current = current + 1
+   
+plt.scatter(x, y, s = 0.2, edgecolor ='pink') 
+plt.axis("equal")
+plt.show()         
+
+```
+### Curva de Von Koch 
+
+![Curva de Koch](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/Curva%20de%20koch%20iterada.png)
+
+Para este fractal se implemento el siguiente código: 
+
+```
+from math import sin, cos, pi, atan2
+from pylab import *
+ 
+def curvaVonKoch(xi, yi, xf, yf, n):
+    if n == 0:
+        plot([xi, xf], [yi, yf], lw=1.0, color='b')
+    elif n > 0:
+        x1 = xi + (xf - xi) / 3.0
+        y1 = yi + (yf - yi) / 3.0
+
+        x3 = xf - (xf - xi) / 3.0
+        y3 = yf - (yf - yi) / 3.0
+
+        radio = hypot(x3 - x1, y3 - y1)
+        alpha = atan2((y3 - y1), (x3 - x1))
+        alpha += pi / 3.0
+        x2 = x1 + radio * cos(alpha)
+        y2 = y1 + radio * sin(alpha)
+
+        curvaVonKoch(xi, yi, x1, y1, n - 1)
+        curvaVonKoch(x1, y1, x2, y2, n - 1)
+        curvaVonKoch(x2, y2, x3, y3, n - 1)
+        curvaVonKoch(x3, y3, xf, yf, n - 1)
+    return
+```
+### Copo de Von Koch 
+
+![Copo de Koch](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/Copo%20de%20Koch.png)
+
+El código que se implementó para este fractal fue:
+
+```
+from math import sin, cos, pi, atan2
+from pylab import *
+ 
+def copoVonKoch(lado, n):
+    x_vertice1 = 0
+    y_vertice1 = 0
+ 
+    x_vertice2 = lado * cos(2 * pi / 3)
+    y_vertice2 = lado * sin(2 * pi / 3)
+ 
+    x_vertice3 = lado * cos(pi / 3)
+    y_vertice3 = lado * sin(pi / 3)
+ 
+    (x_vertice1, y_vertice1, x_vertice2, y_vertice2, n)
+    curvaVonKoch(x_vertice2, y_vertice2, x_vertice3, y_vertice3, n)
+    curvaVonKoch(x_vertice3, y_vertice3, x_vertice1, y_vertice1, n)
+    return
+
+```
 
 
+## Fractal 3D
+
+![Copo de Koch](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/Copo%20de%20Koch.png)
 
 
 
