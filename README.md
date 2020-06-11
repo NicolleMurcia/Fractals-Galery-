@@ -410,7 +410,7 @@ ax.axis("equal")
 
 ### Fractal número 2
 
-![Helecho](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/triangulo%20iterado.png)
+![Helecho](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/helecho%20rosado%20iterado.png)
 
 El código que se implementó para generar este fractal fue: 
 
@@ -522,7 +522,52 @@ def copoVonKoch(lado, n):
 
 ## Fractal 3D
 
-![Copo de Koch]()
+![Copo de Koch](https://raw.githubusercontent.com/NicolleMurcia/Fractals-Galery-/master/Modelo%203D.png)
+
+Paa generar este fracta el 3D se implementó el siguiente código: 
+
+```
+
+
+fig = plt.figure() 
+ax = fig.add_subplot(111, projection='3d')
+ax.view_init(azim=150,elev=60) 
+ax.dist = 3.5
+ax.set_facecolor([0.5,0.0,0.0]) 
+
+
+n = 9 
+dx = 0.0
+dy = 0.0 
+L = 2.0 
+M = 200
+
+def f(Z): 
+    return np.e**(-np.abs(Z))
+
+x = np.linspace(-L+dx,L+dx,M) 
+y = np.linspace(-L+dy,L+dy,M) 
+X,Y = np.meshgrid(x,y) 
+cX = -0.7454294 
+cY = 0 
+C = cX + 1j*cY 
+W = np.zeros((M,M)) 
+Z = X + 1j*Y 
+
+
+for k in range(1,n+1): 
+    ZZ = Z**2 + C
+    Z = ZZ
+    W = f(Z)
+    
+ax.set_xlim(dx-L,dx+L)
+ax.set_zlim(dy-L,dy+L) 
+ax.set_zlim(-2*L,2*L) 
+ax.axis("off") 
+ax.plot_surface(X, Y, -W, rstride=1, cstride=1, cmap="Oranges") 
+plt.show() 
+
+```
 
 
 
